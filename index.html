@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruffle Test Environment</title>
+    <style>
+        body { background-color: #222; color: white; font-family: sans-serif; text-align: center; }
+        #flash-container { margin: 50px auto; width: 800px; height: 600px; border: 5px solid #444; }
+    </style>
+</head>
+<body>
+
+    <h1>Ruffle Emulation Test</h1>
+    <p>Loading Flash content via WebAssembly...</p>
+
+    <div id="flash-container">
+        <embed src="Mainscreen.swf" width="800" height="600">
+    </div>
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+</body>
+</html>
